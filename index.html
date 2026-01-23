@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Básico -->
+    <title>catSom | Aluguel de Som, Iluminação e Estúdio de Gravação</title>
+    <meta name="description" content="Aluguel de som e iluminação profissional para eventos, 
+                                      shows e festas. Estúdio de gravação especializado em samba, 
+                                      pagode e sertanejo. Faça seu evento soar perfeito!" />
+    <meta name="keywords" content="aluguel de som, 
+                                   iluminação para eventos, 
+                                   estúdio de gravação, 
+                                   samba, 
+                                   pagode, 
+                                   sertanejo, 
+                                   forró, 
+                                   técnico de som, 
+                                   aparelhagem para shows" />
+    <meta name="author" content="Rafael Batista" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://www.catsom.com.br/" />
+    <link rel="icon" href="images/icon.svg" type="image/svg+xml" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/images/site.webmanifest" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="catSom | Aluguel de Som, Iluminação e Estúdio de Gravação" />
+    <meta property="og:description" content="Aluguel de som e iluminação profissional para eventos, 
+                                            shows e festas. Estúdio de gravação especializado em samba, 
+                                            pagode e sertanejo. Faça seu evento soar perfeito!" />
+    <meta property="og:image" content="https://www.catsom.com.br/assets/images/og-image.jpg" />
+    <meta property="og:image:alt" content="Logo do catSom sobre um fundo preto com elementos de som e música" />
+    <meta property="og:url" content="https://www.catsom.com.br/" />
+    <meta property="og:site_name" content="catSom" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="catSom | Aluguel de Som, Iluminação e Estúdio de Gravação" />
+    <meta name="twitter:description" content="Aluguel de som e iluminação profissional para eventos, 
+                                            shows e festas. Estúdio de gravação especializado em samba, 
+                                            pagode e sertanejo. Faça seu evento soar perfeito!" />
+    <meta name="twitter:image" content="https://www.catsom.com.br/assets/images/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Logo do catSom sobre um fundo preto com elementos de som e música" />
+    <meta name="twitter:site" content="@catsom" />
+    <meta name="twitter:creator" content="@catsom" />
+
+    <!-- WhatsApp específico -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "catSom",
+        "description": "Aluguel de som, iluminação e estúdio de gravação para eventos em São Paulo.",
+        "url": "https://www.catsom.com.br/",
+        "telephone": "+55-11-98681-9042",
+        "email": "contato@catsom.com.br",
+        "logo": "https://www.catsom.com.br/assets/images/logo.png",
+        "image": "https://www.catsom.com.br/assets/images/hero.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Exemplo, 123",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "postalCode": "01234-000",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -23.55052,
+          "longitude": -46.633308
+        },
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "priceRange": "R$",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "120"
+        },
+        "sameAs": [
+          "https://www.facebook.com/catsom",
+          "https://www.instagram.com/catsom",
+          "https://www.linkedin.com/company/catsom"
+        ]
+      }
+    </script>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+          rel="stylesheet" />
+
+    <!-- Tailwind config + CDN -->
+    <script src="js/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS próprio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-background text-foreground min-h-screen font-sans antialiased">
+    
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="site-container">
+        <div class="header-inner">
+          <!-- Logo -->
+          <a href="#" class="logo">
+            <div class="logo-mark" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                   viewBox="0 0 24 24"
+                   width="20"
+                   height="20"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
+            <span class="brand">catSom</span>
+          </a>
+
+          <!-- Navegação desktop -->
+          <nav class="nav-desktop" aria-label="Principal">
+            <a href="#servicos">Serviços</a>
+            <a href="#galeria">Galeria</a>
+          </nav>
+
+          <!-- CTA WhatsApp desktop -->
+          <div class="cta-whatsapp">
+            <a href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais."
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 24 24"
+                   width="16"
+                   height="16"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+                <path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z" />
+                <path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z" />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+
+          <!-- Botão menu mobile (mantém IDs para compatibilidade com js/main.js) -->
+          <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Menu">
+            <svg id="mobile-menu-icon-open"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 width="24"
+                 height="24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <line x1="4" x2="20" y1="6" y2="6" />
+              <line x1="4" x2="20" y1="12" y2="12" />
+              <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+            <svg id="mobile-menu-icon-close" 
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 width="24"
+                 height="24"
+                 class="hidden"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+              <line x1="18" x2="6" y1="6" y2="18" />
+              <line x1="6" x2="18" y1="6" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navegação mobile -->
+        <div id="mobile-menu" class="mobile-menu hidden" aria-hidden="true">
+          <nav class="mobile-nav" aria-label="Navegação móvel">
+            <a class="mobile-link" href="#servicos">Serviços</a>
+            <a class="mobile-link" href="#galeria">Galeria</a>
+            <a class="mobile-link" href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais."
+               target="_blank"
+               rel="noopener noreferrer">Chamar no WhatsApp</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="min-h-screen bg-background pt-16">
+      
+      <!-- HERO -->
+      <section class="site-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- Elementos decorativos -->
+        <div class="hero-decor left-top">
+          <!-- Volume2 icon -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               class="w-32 h-32 text-primary"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+          </svg>
+        </div>
+        <div class="hero-decor right-bottom">
+          <!-- Mic icon -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               class="w-24 h-24 text-primary"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+            <path d="M19 10a7 7 0 0 1-14 0" />
+            <line x1="12" x2="12" y1="19" y2="22" />
+          </svg>
+        </div>
+        <div class="hero-decor right-mid">
+          <!-- Lightbulb icon -->
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               class="w-20 h-20 text-primary"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.73V18a4 4 0 0 0 8 0v-3.27A7 7 0 0 0 12 2Z" />
+            <path d="M9.5 22h5" />
+          </svg>
+        </div>
+
+        <!-- Conteúdo Hero -->
+        <div class="relative z-10 container mx-auto px-4 text-center hero-content">
+          <div class="max-w-4xl mx-auto">
+            <span class="badge">Som • Iluminação • Estúdio</span>
+
+            <h1 class="hero-title">
+              Faça seu evento
+              <span class="accent">soar perfeito</span>
+            </h1>
+
+            <p class="hero-desc">
+              Aluguel de som e iluminação profissional para shows, festas e
+              eventos. Estúdio de gravação especializado em samba, pagode e
+              sertanejo.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                class="btn-whatsapp">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     class="w-5 h-5 text-white"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z" />
+                  <path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z" />
+                </svg>
+                Chamar no WhatsApp
+              </a>
+
+              <a href="#servicos" class="btn-outline">
+                Conhecer Serviços
+              </a>
+            </div>
+
+            <!-- Indicadores de confiança -->
+            <div class="trust-indicators">
+              <div class="trust-item">
+                <div class="trust-dot" aria-hidden="true"></div>
+                <span class="trust-text">+500 eventos realizados</span>
+              </div>
+              <div class="trust-item">
+                <div class="trust-dot" aria-hidden="true"></div>
+                <span class="trust-text">Equipamentos profissionais</span>
+              </div>
+              <div class="trust-item">
+                <div class="trust-dot" aria-hidden="true"></div>
+                <span class="trust-text">Atendimento personalizado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos" class="services-section">
+        <div class="services-container">
+          <div class="services-header">
+            <span class="badge">Nossos Serviços</span>
+            <h2 class="services-title">
+              Tudo que você precisa para
+              <span class="accent">fazer acontecer</span>
+            </h2>
+            <p class="services-lead">
+              Oferecemos soluções completas para eventos e gravações, com
+              equipamentos de primeira linha e atendimento especializado.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Serviço 1 -->
+            <article class="service-card">
+              <header class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <!-- Volume2 icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="service-icon-svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                  </svg>
+                </div>
+                <h3 class="service-title">Aluguel de Som</h3>
+                <p class="service-desc">Sistemas de som profissional para qualquer tamanho de evento. Caixas, mesa de som, microfones e muito mais.</p>
+              </header>
+              <div class="service-card-body">
+                <ul class="service-features">
+                  <li><span class="service-feature" aria-hidden="true"></span>Caixas de alta potência</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Mesa de som digital</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Microfones sem fio</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Instalação inclusa</li>
+                </ul>
+                <a href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Aluguel%20de%20Som." target="_blank" rel="noopener noreferrer" class="service-cta btn-outline">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="service-cta-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z"/><path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z"/></svg>
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </article>
+
+            <!-- Serviço 2 -->
+            <article class="service-card">
+              <header class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <!-- Lightbulb icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="service-icon-svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.73V18a4 4 0 0 0 8 0v-3.27A7 7 0 0 0 12 2Z" />
+                    <path d="M9.5 22h5" />
+                  </svg>
+                </div>
+                <h3 class="service-title">Iluminação para Eventos</h3>
+                <p class="service-desc">Transforme a atmosfera do seu evento com nossa iluminação profissional. Do básico ao show completo.</p>
+              </header>
+              <div class="service-card-body">
+                <ul class="service-features">
+                  <li><span class="service-feature" aria-hidden="true"></span>Moving heads</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Refletores LED</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Efeitos especiais</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Máquina de fumaça</li>
+                </ul>
+                <a href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Ilumina%C3%A7%C3%A3o%20para%20Eventos." target="_blank" rel="noopener noreferrer" class="service-cta btn-outline">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="service-cta-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z"/><path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z"/></svg>
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </article>
+
+            <!-- Serviço 3 -->
+            <article class="service-card">
+              <header class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <!-- Mic2 icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="service-icon-svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                    <path d="M19 10a7 7 0 0 1-14 0" />
+                    <line x1="12" x2="12" y1="19" y2="22" />
+                  </svg>
+                </div>
+                <h3 class="service-title">Estúdio de Gravação</h3>
+                <p class="service-desc">Grave suas músicas com qualidade profissional. Ambiente acolhedor e técnicos experientes com o som brasileiro.</p>
+              </header>
+              <div class="service-card-body">
+                <ul class="service-features">
+                  <li><span class="service-feature" aria-hidden="true"></span>Gravação de voz</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Gravação de instrumentos</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Mixagem e masterização</li>
+                  <li><span class="service-feature" aria-hidden="true"></span>Ensaios com horário marcado</li>
+                </ul>
+                <a href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Est%C3%BAdio%20de%20Grava%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="service-cta btn-outline">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="service-cta-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z"/><path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z"/></svg>
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- POR QUE NOS ESCOLHER (WhyUs) -->
+      <section class="whyus-section">
+        <div class="whyus-container">
+          <div class="whyus-grid">
+
+            <!-- Lado esquerdo - Conteúdo -->
+            <div class="whyus-left">
+              <span class="badge">Por que nos escolher</span>
+              <h2 class="whyus-title">
+                A gente entende
+                <span class="accent">o som brasileiro</span>
+              </h2>
+              <p class="whyus-lead">
+                Não somos apenas técnicos de som — somos apaixonados pela
+                música que faz o Brasil dançar. Do pandeiro ao acordeão, do
+                cavaquinho à guitarra, sabemos como fazer cada instrumento soar
+                no seu melhor.
+              </p>
+
+              <div class="whyus-features">
+                <!-- Motivos -->
+                <div class="whyus-feature">
+                  <div class="whyus-feature-icon" aria-hidden="true">
+                    <!-- Headphones icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         class="whyus-icon-svg"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                      <path d="M3 18v-3a9 9 0 0 1 18 0v3" />
+                      <rect x="1" y="15" width="4" height="6" rx="1" />
+                      <rect x="19" y="15" width="4" height="6" rx="1" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="whyus-feature-title">Qualidade de Som Superior</h3>
+                    <p class="whyus-feature-desc">Equipamentos de última geração que garantem uma experiência sonora impecável em qualquer ambiente.</p>
+                  </div>
+                </div>
+
+                <div class="whyus-feature">
+                  <div class="whyus-feature-icon" aria-hidden="true">
+                    <!-- Music icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         class="whyus-icon-svg"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                      <path d="M9 18V5l12-2v13" />
+                      <circle cx="6" cy="18" r="3" />
+                      <circle cx="18" cy="16" r="3" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="whyus-feature-title">Especialistas em Música Brasileira</h3>
+                    <p class="whyus-feature-desc">
+                      Anos de experiência com samba, pagode e sertanejo.
+                      Entendemos o que faz cada evento brilhar.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="whyus-feature">
+                  <div class="whyus-feature-icon" aria-hidden="true">
+                    <!-- Users icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         class="whyus-icon-svg"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="whyus-feature-title">Atendimento Personalizado</h3>
+                    <p class="whyus-feature-desc">
+                      Cada evento é único. Trabalhamos junto com você
+                      para criar a experiência perfeita.</p>
+                  </div>
+                </div>
+
+                <div class="whyus-feature">
+                  <div class="whyus-feature-icon" aria-hidden="true">
+                    <!-- CheckCircle icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 24 24"
+                         class="whyus-icon-svg"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="whyus-feature-title">Equipamentos Profissionais</h3>
+                    <p class="whyus-feature-desc">
+                      Trabalhamos apenas com marcas reconhecidas no mercado.
+                      Nada de improvisos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lado direito - Visual (mantém gradiente) -->
+            <div class="relative whyus-visual">
+              <div class="whyus-stats-wrap">
+                <div class="whyus-stats-grid">
+                  <div class="whyus-stat-card">
+                    <span class="whyus-stat-number">+500</span>
+                    <span class="whyus-stat-label">Eventos realizados</span>
+                  </div>
+                  <div class="whyus-stat-card">
+                    <span class="whyus-stat-number">10+</span>
+                    <span class="whyus-stat-label">Anos de experiência</span>
+                  </div>
+                  <div class="whyus-stat-card">
+                    <span class="whyus-stat-number">100%</span>
+                    <span class="whyus-stat-label">Clientes satisfeitos</span>
+                  </div>
+                  <div class="whyus-stat-card">
+                    <span class="whyus-stat-number">24h</span>
+                    <span class="whyus-stat-label">Suporte disponível</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section id="galeria" class="gallery-section">
+        <div class="gallery-container">
+          <div class="gallery-header">
+            <span class="badge">Nossa Galeria</span>
+            <h2 class="gallery-title">
+              Veja nosso trabalho
+              <span> em <span class="accent">ação</span></span>
+            </h2>
+            <p class="gallery-lead">
+              Conheça alguns dos eventos que já realizamos e nosso estúdio de gravação.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <!-- 6 imagens -->
+            <button class="gallery-thumb" data-image="images/gallery-1.jpg" data-alt="Show de pagode com iluminação profissional">
+              <img src="images/gallery-1.jpg" alt="Show de pagode com iluminação profissional" class="gallery-image" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <span class="gallery-tag">Eventos</span>
+                  <p class="gallery-desc">
+                    Show de pagode com iluminação profissional.
+                  </p>
+                </div>
+              </div>
+            </button>
+
+            <button class="gallery-thumb" data-image="images/gallery-2.jpg" data-alt="Estúdio de gravação equipado">
+              <img src="images/gallery-2.jpg" alt="Estúdio de gravação equipado" class="gallery-image" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <span class="gallery-tag">Estúdio</span>
+                  <p class="gallery-desc">
+                    Estúdio de gravação equipado.
+                  </p>
+                </div>
+              </div>
+            </button>
+
+            <button class="gallery-thumb" data-image="images/gallery-3.jpg" data-alt="Sistema de som para festa">
+              <img src="images/gallery-3.jpg" alt="Sistema de som para festa" class="gallery-image" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <span class="gallery-tag">Equipamentos</span>
+                  <p class="gallery-desc">
+                    Sistema de som para festa.
+                  </p>
+                </div>
+              </div>
+            </button>
+
+            <button class="gallery-thumb" data-image="images/gallery-4.jpg" data-alt="Dupla sertaneja gravando no estúdio">
+              <img src="images/gallery-4.jpg" alt="Dupla sertaneja gravando no estúdio" class="gallery-image" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <span class="gallery-tag">Estúdio</span>
+                  <p class="gallery-desc">
+                    Dupla sertaneja gravando no estúdio.
+                  </p>
+                </div>
+              </div>
+            </button>
+
+            <button class="gallery-thumb" data-image="images/gallery-5.jpg" data-alt="Iluminação de palco">
+              <img src="images/gallery-5.jpg" alt="Iluminação de palco" class="gallery-image" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <span class="gallery-tag">Eventos</span>
+                  <p class="gallery-desc">
+                    Iluminação de palco.
+                  </p>
+                </div>
+              </div>
+            </button>
+
+            <button class="gallery-thumb" data-image="images/gallery-6.jpg" data-alt="Mesa de som profissional">
+              <img src="images/gallery-6.jpg" alt="Mesa de som profissional" class="gallery-image" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <span class="gallery-tag">Equipamentos</span>
+                  <p class="gallery-desc">
+                    Mesa de som profissional.
+                  </p>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <!-- Modal simples da galeria (IDs intactos para JS) -->
+          <div id="gallery-modal" class="gallery-modal">
+            <div class="gallery-modal-inner">
+              <button id="gallery-modal-close" class="gallery-modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <line x1="18" x2="6" y1="6" y2="18" />
+                  <line x1="6" x2="18" y1="6" y2="18" />
+                </svg>
+              </button>
+              <img id="gallery-modal-image" src="" alt="Imagem ampliada" class="gallery-modal-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section class="testimonials-section">
+        <div class="testimonials-container">
+          <div class="testimonials-header">
+            <span class="badge">Depoimentos</span>
+            <h2 class="testimonials-title">
+              O que nossos clientes
+              <span class="testimonial-accent"> estão dizendo</span>
+            </h2>
+            <p class="testimonials-lead">
+              A satisfação dos nossos clientes é nossa maior conquista.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- 4 cards de depoimentos -->
+            <article class="testimonial-card">
+              <div class="testimonial-body">
+                <!-- Quote icon (user-provided, gold stroke) -->
+                <div class="testimonial-quote-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="testimonial-quote-svg" aria-hidden="true">
+                    <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                    <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                  </svg>
+                </div>
+
+                <p class="testimonial-text">
+                  "O som do nosso show ficou impecável! A equipe entende muito
+                  de pagode e samba, fizeram a diferença no nosso evento."
+                </p>
+
+                <div class="testimonial-meta">
+                  <div class="testimonial-author">
+                    <p class="testimonial-author-name">Roberto Silva</p>
+                    <p class="testimonial-author-role">Vocalista - Grupo Raiz do Samba</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="testimonial-stars">★★★★★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-body">
+                <div class="testimonial-quote-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="testimonial-quote-svg" aria-hidden="true">
+                    <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                    <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                  </svg>
+                </div>
+
+                <p class="testimonial-text">
+                  "Trabalho com eles há 3 anos e nunca me decepcionaram.
+                  Equipamentos de qualidade e profissionalismo do início ao
+                  fim."
+                </p>
+
+                <div class="testimonial-meta">
+                  <div class="testimonial-author">
+                    <p class="testimonial-author-name">Fernanda Costa</p>
+                    <p class="testimonial-author-role">Organizadora de Eventos</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="testimonial-stars">★★★★★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-body">
+                <div class="testimonial-quote-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="testimonial-quote-svg" aria-hidden="true">
+                    <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                    <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                  </svg>
+                </div>
+
+                <p class="testimonial-text">
+                  "Gravamos nosso primeiro EP no estúdio deles. O resultado
+                  ficou incrível e o preço foi muito justo. Super recomendo!"
+                </p>
+
+                <div class="testimonial-meta">
+                  <div class="testimonial-author">
+                    <p class="testimonial-author-name">João &amp; Maria</p>
+                    <p class="testimonial-author-role">Dupla Sertaneja</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="testimonial-stars">★★★★★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-body">
+                <div class="testimonial-quote-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       width="24"
+                       height="24"
+                       viewBox="0 0 24 24"
+                       fill="none"
+                       stroke="#d4a43a"
+                       stroke-width="2"
+                       stroke-linecap="round"
+                       stroke-linejoin="round"
+                       class="testimonial-quote-svg"
+                       aria-hidden="true">
+                    <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                    <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                  </svg>
+                </div>
+
+                <p class="testimonial-text">
+                  "O som do meu bar virou referência na região depois que
+                  comecei a trabalhar com a catSom. Os clientes sempre
+                  elogiam!"
+                </p>
+
+                <div class="testimonial-meta">
+                  <div class="testimonial-author">
+                    <p class="testimonial-author-name">Carlos Eduardo</p>
+                    <p class="testimonial-author-role">Dono de Bar</p>
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="testimonial-stars">★★★★★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section" aria-label="Chamada para ação">
+        <!-- decorativos sutis (visuais) -->
+        <div class="cta-decor cta-decor-left" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               class="cta-decor-1"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13" />
+            <circle cx="6" cy="18" r="3" />
+            <circle cx="18" cy="16" r="3" />
+          </svg>
+        </div>
+        <div class="cta-decor cta-decor-right" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               class="cta-decor-2"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13" />
+            <circle cx="6" cy="18" r="3" />
+            <circle cx="18" cy="16" r="3" />
+          </svg>
+        </div>
+
+        <div class="cta-container">
+          <div class="cta-content">
+            <h2 class="cta-title">
+              Pronto para fazer seu <span class="cta-accent">evento bombar?</span>
+            </h2>
+            <p class="cta-lead">
+              Entre em contato agora mesmo e receba um orçamento personalizado.
+              Estamos prontos para transformar seu evento em uma experiência inesquecível!
+            </p>
+
+            <div class="cta-ctas">
+              <a href="https://wa.me/5511986819042?text=Ol%C3%A1!%20Quero%20fazer%20um%20or%C3%A7amento%20para%20meu%20evento."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="cta-btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     class="cta-btn-icon"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z" />
+                  <path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z" />
+                </svg>
+                Chamar no WhatsApp
+              </a>
+
+              <a href="tel:+5511986819042" class="cta-btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     class="cta-btn-icon"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" />
+                </svg>
+                Ligar Agora
+              </a>
+            </div>
+
+            <p class="cta-note">
+              Atendemos de segunda a sábado, das 9h às 18h
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="footer-brand-head">
+              <div class="footer-logo-mark" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-logo-svg">
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+              </div>
+              <span class="footer-brand-name">catSom</span>
+            </div>
+            <p class="footer-description">
+              Aluguel de som e iluminação profissional. Estúdio de gravação
+              especializado em música brasileira.
+            </p>
+
+            <div class="footer-socials">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z" /></svg>
+              </a>
+              <a href="https://wa.me/5511986819042" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.67 20.17 4.6 16.4A8 8 0 1 1 8 19.4l-4.33.77Z" /><path d="M12 17a4.5 4.5 0 0 0 4.5-4.5c0-.28-.03-.55-.08-.81a.5.5 0 0 0-.8-.26L14 13l-1.5-.5-1-2-2-1-1.5-3a.5.5 0 0 0-.8-.15 4.5 4.5 0 0 0 3.8 7.21Z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Serviços -->
+          <div class="footer-services">
+            <h3 class="footer-heading">Serviços</h3>
+            <ul class="footer-list">
+              <li><a href="#servicos" class="footer-link">Aluguel de Som</a></li>
+              <li><a href="#servicos" class="footer-link">Iluminação para Eventos</a></li>
+              <li><a href="#servicos" class="footer-link">Estúdio de Gravação</a></li>
+              <li><a href="#servicos" class="footer-link">Aparelhagem Completa</a></li>
+            </ul>
+          </div>
+
+          <!-- Links Rápidos -->
+          <div class="footer-quicklinks">
+            <h3 class="footer-heading">Links Rápidos</h3>
+            <ul class="footer-list">
+              <li><a href="#servicos" class="footer-link">Nossos Serviços</a></li>
+              <li><a href="#galeria" class="footer-link">Galeria</a></li>
+              <li><a href="https://wa.me/5511986819042" class="footer-link">Solicitar Orçamento</a></li>
+            </ul>
+          </div>
+
+          <!-- Contato -->
+          <div class="footer-contact">
+            <h3 class="footer-heading">Contato</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="footer-contact-icon" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z" /><circle cx="12" cy="10" r="3" /></svg>
+                <span class="footer-contact-text">Rua da Música, 123<br/>São Paulo - SP</span>
+              </li>
+              <li class="footer-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="footer-contact-icon" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" /></svg>
+                <a href="tel:+5511986819042" class="footer-contact-link">(11) 98681-9042</a>
+              </li>
+              <li class="footer-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="footer-contact-icon" fill="none" stroke="#d4a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><polyline points="22,6 12,13 2,6" /></svg>
+                <a href="mailto:contato@catsom.com.br" class="footer-contact-link">contato@catsom.com.br</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> catSom. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS próprio -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
